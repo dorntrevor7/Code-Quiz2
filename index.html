@@ -2,14 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Code Quiz</title>
+    <!-- linked stylesheet -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- linked javascript file -->
+    <script defer src="./assets/js/script.js"></script>
 </head>
 
 <body>
-
+    <div class="wrapper">
+        <!-- Header of the webpage -->
+        <header>
+            <h1>Code Quiz</h1>
+            <p><strong>Timer: <span id="timer"></span>70</strong></p>
+        </header>
+        <hr>
+        <!-- displays the generate password card -->
+        <div class="card">
+            <div class="card-header" id="question">
+                <h2>This is a code quiz where you will test your coding knowledge.</h2>
+            </div>
+            <hr>
+            <div class="card-body">
+                <h3>This is where your answers will show</h3>
+                <ul id="answers"></ul>
+            </div>
+            <hr>
+            <!-- generate password button -->
+            <div class="card-footer">
+                <button id="start" class="btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
