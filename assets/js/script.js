@@ -1,7 +1,8 @@
 // Selecting html elements
-const $timer = document.querySelector("#timer");
-const $question = document.querySelector("#question");
-const $answer = document.querySelector("#answer");
+const $timer = $("#timer");
+const $question = $("#question");
+const $answer = $("#answers");
+const $start = $("#start");
 
 // Creating an array of questions that will have the question and answer with the answer having a boolean isCorrect
 const questions = [
@@ -11,7 +12,7 @@ const questions = [
       { answer: "console.log()", isCorrect: true },
       { answer: "alert()", isCorrect: false },
       { answer: "document.getElementById()", isCorrect: false },
-      { answer: "browser.log()" },
+      { answer: "browser.log()", isCorrect: false },
     ],
   },
   {
@@ -29,7 +30,7 @@ const questions = [
       { answer: "console.log()", isCorrect: true },
       { answer: "alert()", isCorrect: false },
       { answer: "document.getElementById()", isCorrect: false },
-      { answer: "browser.log()" },
+      { answer: "browser.log()", isCorrect: false },
     ],
   },
   {
@@ -38,7 +39,21 @@ const questions = [
       { answer: "console.log()", isCorrect: true },
       { answer: "alert()", isCorrect: false },
       { answer: "document.getElementById()", isCorrect: false },
-      { answer: "browser.log()" },
+      { answer: "browser.log()", isCorrect: false },
     ],
   },
 ];
+
+function startQuiz() {
+  // setInterval(function, 1000);
+  //   create buttons that show up on html with the answer content
+
+  //  Creating the li buttons
+  const $button = $("<button>");
+  const $li = $("<li>");
+  $question.text(questions[0].question);
+  $li.text(questions[0].answers[0].answer);
+  $answer.append($li);
+}
+
+$start.on("click", startQuiz);
