@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Code Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- linked stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- linked javascript file -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script defer src="../js/result.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Header of the webpage -->
+        <header>
+            <a style="font-size: 30px;" href="../../index.html">Code Quiz</a>
+        </header>
+        <hr>
+        <!-- displays the generate password card -->
+        <div class="card">
+            <div class="card-header">
+                <h2 id="question">HighScores</h2>
+            </div>
+            <hr>
+            <form class="card-body" type="submit">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="name-input" placeholder="Enter your name in here"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="save">Save</button>
+                </div>
+                <ul class="list-group">
+                    <li id="example" class="list-group-item">Example Name</li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
