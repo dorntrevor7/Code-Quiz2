@@ -71,7 +71,7 @@ function startQuiz() {
       let time = setInterval(() => {
         $incorrect.hide();
         clearInterval(time);
-      }, 3000);
+      }, 2000);
     }
   });
   // $("#Elements").on("click", function () {});
